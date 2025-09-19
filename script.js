@@ -142,3 +142,35 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Blokir klik kanan
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
+
+// Blokir beberapa shortcut keyboard untuk buka DevTools
+document.addEventListener("keydown", function (e) {
+  // F12
+  if (e.keyCode === 123) {
+    e.preventDefault();
+  }
+
+  // Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C
+  if (
+    e.ctrlKey &&
+    e.shiftKey &&
+    (e.key === "I" || e.key === "J" || e.key === "C")
+  ) {
+    e.preventDefault();
+  }
+
+  // Ctrl+U (View Source)
+  if (e.ctrlKey && e.key === "u") {
+    e.preventDefault();
+  }
+
+  // Ctrl+Shift+K (Firefox console)
+  if (e.ctrlKey && e.shiftKey && e.key === "K") {
+    e.preventDefault();
+  }
+});
