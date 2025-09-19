@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Header
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementById('header');
-    const navLinks = document.querySelectorAll('#nav a:not(.bg-black)');
+    const navLinks = document.querySelectorAll('#nav a:not(.no-text-change)');
     const brandName = document.getElementById('brand-name');
   
     window.addEventListener('scroll', () => {
