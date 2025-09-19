@@ -98,40 +98,47 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Header
-document.addEventListener('DOMContentLoaded', () => {
-    const header = document.getElementById('header');
-    const navLinks = document.querySelectorAll('#nav a:not(.no-text-change)');
-    const brandName = document.getElementById('brand-name');
-  
-    window.addEventListener('scroll', () => {
-      if(window.scrollY > 0) {
-        header.classList.remove('bg-transparent');
-        header.classList.add('bg-white');
-  
-        // Ubah warna teks nav link dari putih ke abu-abu gelap
-        navLinks.forEach(link => {
-          link.classList.remove('text-white');
-          link.classList.add('text-gray-700');
-        });
-  
-        // Ubah warna brandName dari putih ke abu-abu gelap
-        brandName.classList.remove('text-white');
-        brandName.classList.add('text-gray-800');
-  
-      } else {
-        header.classList.remove('bg-white');
-        header.classList.add('bg-transparent');
-  
-        // Kembalikan warna teks nav link ke putih
-        navLinks.forEach(link => {
-          link.classList.remove('text-gray-700');
-          link.classList.add('text-white');
-        });
-  
-        // Kembalikan warna brandName ke putih
-        brandName.classList.remove('text-gray-800');
-        brandName.classList.add('text-white');
-      }
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  const menuIcon = document.querySelector("#mobile-menu-button svg");
+  const header = document.getElementById("header");
+  const navLinks = document.querySelectorAll("#nav a:not(.no-text-change)");
+  const brandName = document.getElementById("brand-name");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+      header.classList.remove("bg-transparent");
+      header.classList.add("bg-white");
+
+      // Ubah warna teks nav link dari putih ke abu-abu gelap
+      navLinks.forEach((link) => {
+        link.classList.remove("text-white");
+        link.classList.add("text-gray-700");
+      });
+
+      // Ubah warna brandName dari putih ke abu-abu gelap
+      brandName.classList.remove("text-white");
+      brandName.classList.add("text-gray-800");
+
+      // 🔥 Ubah warna ikon menu jadi hitam
+      menuIcon.classList.remove("text-white");
+      menuIcon.classList.add("text-black");
+    } else {
+      header.classList.remove("bg-white");
+      header.classList.add("bg-transparent");
+
+      // Kembalikan warna teks nav link ke putih
+      navLinks.forEach((link) => {
+        link.classList.remove("text-gray-700");
+        link.classList.add("text-white");
+      });
+
+      // Kembalikan warna brandName ke putih
+      brandName.classList.remove("text-gray-800");
+      brandName.classList.add("text-white");
+
+      // 🔥 Kembalikan warna ikon menu jadi putih
+      menuIcon.classList.remove("text-black");
+      menuIcon.classList.add("text-white");
+    }
   });
-  
+});
