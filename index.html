@@ -7,13 +7,16 @@
 
   <!-- SEO Meta Tags -->
   <title>Top Commodity for Your Top Business | [Nama Brand/Bisnis Anda]</title>
-  <meta name="description" content="Temukan komoditas terbaik untuk mendukung bisnis Anda. Solusi terpercaya dan berkualitas untuk kebutuhan ekspor, impor, dan distribusi." />
-  <meta name="keywords" content="komoditas ekspor, komoditas impor, perdagangan internasional, bisnis ekspor, komoditas unggulan, top commodity" />
+  <meta name="description"
+    content="Temukan komoditas terbaik untuk mendukung bisnis Anda. Solusi terpercaya dan berkualitas untuk kebutuhan ekspor, impor, dan distribusi." />
+  <meta name="keywords"
+    content="komoditas ekspor, komoditas impor, perdagangan internasional, bisnis ekspor, komoditas unggulan, top commodity" />
   <meta name="author" content="[Nama Anda atau Perusahaan]" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Top Commodity for Your Top Business!" />
-  <meta property="og:description" content="Temukan komoditas unggulan untuk mendukung bisnis Anda. Solusi terbaik untuk pertumbuhan usaha Anda!" />
+  <meta property="og:description"
+    content="Temukan komoditas unggulan untuk mendukung bisnis Anda. Solusi terbaik untuk pertumbuhan usaha Anda!" />
   <meta property="og:image" content="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" />
   <meta property="og:url" content="https://example-landingpage.vercel.app" />
   <meta property="og:type" content="website" />
@@ -21,7 +24,8 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Top Commodity for Your Top Business!" />
-  <meta name="twitter:description" content="Temukan komoditas unggulan untuk mendukung bisnis Anda. Solusi terbaik untuk pertumbuhan usaha Anda!" />
+  <meta name="twitter:description"
+    content="Temukan komoditas unggulan untuk mendukung bisnis Anda. Solusi terbaik untuk pertumbuhan usaha Anda!" />
   <meta name="twitter:image" content="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" />
 
   <!-- Favicon -->
@@ -42,13 +46,13 @@
   <script src="script.js"></script>
 
   <!-- Header/Navbar -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+  <header id="header" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-colors duration-300">
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <a href="#home" class="flex items-center space-x-2">
           <img src="https://elements.envato.com/favicon.ico" class="h-8 lg:h-10" alt="Logo" />
-          <span class="text-lg font-semibold text-gray-800">PT. Export Tani Nusantara</span>
+          <span id="brand-name" class="text-lg font-semibold text-white">PT. Export Tani Nusantara</span>
         </a>
 
         <!-- Mobile menu button -->
@@ -59,14 +63,13 @@
         </button>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden lg:flex items-center space-x-6">
-          <a href="#home" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Home</a>
-          <a href="#about" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">About Us</a>
-          <a href="#product" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Our
-            Product</a>
-          <a href="#gallery" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Gallery</a>
-          <a href="#ourteam" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Our Team</a>
-          <a href="#contact" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Contact</a>
+        <nav id="nav" class="hidden lg:flex items-center space-x-6">
+          <a href="#home" class="text-sm font-medium text-white hover:text-black transition-colors">Home</a>
+          <a href="#about" class="text-sm font-medium text-white hover:text-black transition-colors">About Us</a>
+          <a href="#product" class="text-sm font-medium text-white hover:text-black transition-colors">Our Product</a>
+          <a href="#gallery" class="text-sm font-medium text-white hover:text-black transition-colors">Gallery</a>
+          <a href="#ourteam" class="text-sm font-medium text-white hover:text-black transition-colors">Our Team</a>
+          <a href="#contact" class="text-sm font-medium text-white hover:text-black transition-colors">Contact</a>
           <a href="https://wa.me/6281212851807"
             class="bg-black hover:bg-gray-800 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors">
             Get a Free Quote
@@ -113,20 +116,24 @@
         We connect global markets with premium commodities produced by local farmers and SMEs.
       </p>
       <a href="#about"
-        class="bg-black hover:bg-gray-800 text-white font-semibold px-8 py-3 rounded-lg inline-block transition-colors shadow-lg">
+        class="bg-primary-100 hover:bg-primary-400 text-white font-semibold px-8 py-3 rounded-lg inline-block transition-colors shadow-lg">
         Discover More
       </a>
     </div>
   </section>
 
-  <!-- WhatsApp Float Button -->
-  <a href="https://wa.me/6281212851807" target="_blank"
-    class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:bg-green-700 transition-colors">
-    <svg class="w-7 h-7 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-      <path
-        d="M20.4 3.6C18.4 1.6 15.6 0.5 12.5 0.5 6.3 0.5 1.5 5.3 1.5 11.5c0 1.8.5 3.6 1.3 5.1L.6 23.4c-.1.3-.1.6.2.8.2.2.4.2.6.2l6.8-1.8c1.5.8 3.3 1.2 5 1.2 6.2 0 11-4.8 11-11 0-3.1-1.1-5.9-3.1-8zm-7.9 17.5c-1.6 0-3.2-.4-4.6-1.2l-.3-.2-4.1 1.1 1.1-4.1-.2-.3c-.8-1.4-1.2-3-1.2-4.6 0-5.2 4.3-9.5 9.5-9.5 2.5 0 4.8 1 6.5 2.7 1.7 1.7 2.7 4 2.7 6.5-.1 5.2-4.4 9.6-9.6 9.6zm5.2-7.2c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.1-.3.3-.7 1-.8 1-.1.1-.1.2-.2.2-.1 0-.3-.1-.4-.1-.7-.4-1.4-.8-2-1.5-.5-.5-1.2-1.6-1.3-1.8-.1-.2-.1-.3 0-.5.1-.1.2-.3.3-.4.2-.2.3-.3.4-.5.1-.2.1-.3.2-.5 0-.2-.1-.4-.2-.6-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6-.2 0-.4 0-.6 0-.2 0-.4.1-.6.1-.2.1-.6.3-.7.3-.3.1-.4.3-.5.6-.1.3-.7 1-.7 2.4s.8 2.8 1.1 3c.1.2 1.4 2.3 3.5 3.2 1 .4 1.6.5 2.1.6.8.1 1.5.1 2-.1.5-.1 1.7-.7 1.9-1.4.2-.6.2-1.1.1-1.2-.1-.2-.4-.2-.7-.3z" />
-    </svg>
-  </a>
+<!-- WhatsApp Float Button dengan Teks -->
+<a href="https://wa.me/6281212851807" target="_blank"
+  class="whatsapp-float flex items-center fixed bottom-6 right-6 z-40 bg-green-600 hover:bg-green-700 text-white rounded-full shadow-lg transition-colors px-4 py-3 space-x-3">
+
+  <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path
+      d="M20.4 3.6C18.4 1.6 15.6 0.5 12.5 0.5 6.3 0.5 1.5 5.3 1.5 11.5c0 1.8.5 3.6 1.3 5.1L.6 23.4c-.1.3-.1.6.2.8.2.2.4.2.6.2l6.8-1.8c1.5.8 3.3 1.2 5 1.2 6.2 0 11-4.8 11-11 0-3.1-1.1-5.9-3.1-8zm-7.9 17.5c-1.6 0-3.2-.4-4.6-1.2l-.3-.2-4.1 1.1 1.1-4.1-.2-.3c-.8-1.4-1.2-3-1.2-4.6 0-5.2 4.3-9.5 9.5-9.5 2.5 0 4.8 1 6.5 2.7 1.7 1.7 2.7 4 2.7 6.5-.1 5.2-4.4 9.6-9.6 9.6zm5.2-7.2c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.1-.3.3-.7 1-.8 1-.1.1-.1.2-.2.2-.1 0-.3-.1-.4-.1-.7-.4-1.4-.8-2-1.5-.5-.5-1.2-1.6-1.3-1.8-.1-.2-.1-.3 0-.5.1-.1.2-.3.3-.4.2-.2.3-.3.4-.5.1-.2.1-.3.2-.5 0-.2-.1-.4-.2-.6-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6-.2 0-.4 0-.6 0-.2 0-.4.1-.6.1-.2.1-.6.3-.7.3-.3.1-.4.3-.5.6-.1.3-.7 1-.7 2.4s.8 2.8 1.1 3c.1.2 1.4 2.3 3.5 3.2 1 .4 1.6.5 2.1.6.8.1 1.5.1 2-.1.5-.1 1.7-.7 1.9-1.4.2-.6.2-1.1.1-1.2-.1-.2-.4-.2-.7-.3z" />
+  </svg>
+
+  <span class="whatsapp-text font-semibold text-white select-none">Butuh bantuan?</span>
+</a>
+
 
   <!-- About Section -->
   <section id="about" class="py-20 bg-white">
@@ -211,13 +218,12 @@
     </div>
   </section>
 
-
   <!-- Why Choose Us Section -->
   <section class="py-20 bg-white">
     <div class="container mx-auto px-4">
       <!-- Title -->
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-primary-100 font-semibold mb-2">
+        <h2 class="text-primary-100 font-semibold mb-2 uppercase">
           Why Choose Us<br />
           <span class="text-2xl text-black">Features & Benefits </span>
         </h2>
@@ -303,94 +309,86 @@
     </div>
   </section>
 
-
   <!-- Products Section -->
   <section id="product" class="py-20 bg-gray-900 text-white relative">
-    <div class="absolute inset-0 bg-black/60 z-0"></div>
-    <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Background"
-      class="absolute inset-0 w-full h-full object-cover z-0" />
+    <!-- Background Image with Dark Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Background"
+        class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/70"></div> <!-- Dark Overlay -->
+    </div>
 
+    <!-- Content -->
     <div class="container mx-auto px-4 relative z-10">
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <p class="text-primary-100 font-semibold mb-2">Our Product</p>
-        <h2 class="text-3xl font-bold mb-4">Trusted Partner In Supplying Premium-quality Commodities!</h2>
-        <p class="text-gray-300">PT. Export Tani Nusantara – Top Commodities Supplier in Indonesia</p>
+        <p class="text-primary-100 font-semibold mb-2 uppercase">Our Product</p>
+        <h2 class="text-3xl md:text-4xl text-green-custom-400-nohover font-bold">Trusted Partner In Supplying Premium-quality Commodities!</h2>
+        <p class="text-white mt-4">PT. Export Tani Nusantara – Top Commodities Supplier in Indonesia</p>
       </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
         <!-- Product Card 1 -->
-        <div
-          class="bg-white text-gray-800 rounded-2xl shadow-lg overflow-hidden transition-transform hover:translate-y-2">
-          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Coffee Beans"
-            class="w-full h-48 object-cover" />
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200">
+          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Coffee Beans" class="w-full h-52 object-cover" />
           <div class="p-6">
-            <h3 class="text-xl font-bold mb-4 text-center">Coffee Beans</h3>
+            <h3 class="text-2xl font-semibold mb-5 text-center text-gray-800">Coffee Beans</h3>
             <div class="flex flex-col gap-4">
-              <button
-                class="bg-primary-100 hover:bg-primary-400 text-white font-semibold py-2 px-4 rounded-lg flex items-center justify-center transition-colors">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              <button class="bg-primary-100 text-white font-semibold py-3 rounded-lg flex items-center justify-center gap-3">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                 </svg>
                 Download Catalogue
               </button>
-              <a href="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
-                class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg text-center transition-colors">Quote
-                Now!</a>
+              <a href="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" class="bg-gray-900 text-white font-semibold py-3 rounded-lg text-center block">
+                Quote Now!
+              </a>
             </div>
           </div>
         </div>
-
+    
         <!-- Product Card 2 -->
-        <div
-          class="bg-white text-gray-800 rounded-2xl shadow-lg overflow-hidden transition-transform hover:translate-y-2">
-          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Healthy Chips"
-            class="w-full h-48 object-cover" />
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200">
+          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Healthy Chips" class="w-full h-52 object-cover" />
           <div class="p-6">
-            <h3 class="text-xl font-bold mb-4 text-center">Healthy Chips</h3>
+            <h3 class="text-2xl font-semibold mb-5 text-center text-gray-800">Healthy Chips</h3>
             <div class="flex flex-col gap-4">
-              <button
-                class="bg-primary-100 hover:bg-primary-400 text-white font-semibold py-2 px-4 rounded-lg flex items-center justify-center transition-colors">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              <button class="bg-primary-100 text-white font-semibold py-3 rounded-lg flex items-center justify-center gap-3">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                 </svg>
                 Download Catalogue
               </button>
-              <a href="https://wa.me/6281212851807"
-                class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg text-center transition-colors">Quote
-                Now!</a>
+              <a href="https://wa.me/6281212851807" class="bg-gray-900 text-white font-semibold py-3 rounded-lg text-center block">
+                Quote Now!
+              </a>
             </div>
           </div>
         </div>
-
+    
         <!-- Product Card 3 -->
-        <div
-          class="bg-white text-gray-800 rounded-2xl shadow-lg overflow-hidden transition-transform hover:translate-y-2">
-          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Spices"
-            class="w-full h-48 object-cover" />
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200">
+          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Spices" class="w-full h-52 object-cover" />
           <div class="p-6">
-            <h3 class="text-xl font-bold mb-4 text-center">Spices</h3>
+            <h3 class="text-2xl font-semibold mb-5 text-center text-gray-800">Spices</h3>
             <div class="flex flex-col gap-4">
-              <button
-                class="bg-primary-100 hover:bg-primary-400 text-white font-semibold py-2 px-4 rounded-lg flex items-center justify-center transition-colors">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              <button class="bg-primary-100 text-white font-semibold py-3 rounded-lg flex items-center justify-center gap-3">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                 </svg>
                 Download Catalogue
               </button>
-              <a href="https://wa.me/6281212851807"
-                class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg text-center transition-colors">Quote
-                Now!</a>
+              <a href="https://wa.me/6281212851807" class="bg-gray-900 text-white font-semibold py-3 rounded-lg text-center block">
+                Quote Now!
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
   </section>
 
-  <!-- Gallery Section -->
+
   <!-- Container untuk gambar -->
   <div id="gallery" class="max-w-screen-xl mx-auto px-8 py-8">
     <div class="flex flex-col items-center mt-24">
@@ -400,95 +398,104 @@
     </div>
 
     <!-- Grid untuk gambar -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-auto">
+    <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 px-4">
       <!-- Gambar 1 -->
-      <div class="relative">
-        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
-          alt="Gallery PT.Export Tani Nusantarat" class="object-cover w-full h-full rounded-lg" />
+      <div class="break-inside-avoid overflow-hidden rounded-lg relative">
+        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Export Product Manufacturing"
+          class="w-full rounded-lg object-cover" loading="lazy" />
         <div
-          class="absolute inset-0 bg-black bg-opacity-50 flex items-center text-center justify-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
-          Export Product Manufacturing</div>
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-center font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          Export Product Manufacturing
+        </div>
       </div>
 
       <!-- Gambar 2 -->
-      <div class="relative lg:h-3/4">
-        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
-          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-full rounded-lg" />
+      <div class="break-inside-avoid overflow-hidden rounded-lg relative">
+        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Export Shipment To Australia"
+          class="w-full rounded-lg object-cover" loading="lazy" />
         <div
-          class="absolute inset-0 bg-black bg-opacity-50 flex items-center text-center justify-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
-          Export Shipment To Australia</div>
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-center font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          Export Shipment To Australia
+        </div>
       </div>
 
       <!-- Gambar 3 -->
-      <div class="relative">
-        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
-          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-auto rounded-lg" />
+      <div class="break-inside-avoid overflow-hidden rounded-lg relative">
+        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Export Shipment To Australia"
+          class="w-full rounded-lg object-cover" loading="lazy" />
         <div
-          class="absolute inset-0 bg-black bg-opacity-50 flex items-center text-center justify-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
-          Export Shipment To Australia</div>
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-center font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          Export Shipment To Australia
+        </div>
       </div>
 
       <!-- Gambar 4 -->
-      <div class="relative lg:h-3/4">
+      <div class="break-inside-avoid overflow-hidden rounded-lg relative">
         <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
-          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-full rounded-lg" />
+          alt="National Export Collaboration Conference" class="w-full rounded-lg object-cover" loading="lazy" />
         <div
-          class="absolute inset-0 bg-black bg-opacity-50 flex items-center text-center justify-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-center font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
           National Export Collaboration Conference
         </div>
       </div>
 
       <!-- Gambar 5 -->
-      <div class="relative lg:h-auto">
+      <div class="break-inside-avoid overflow-hidden rounded-lg relative">
         <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
-          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-full rounded-lg" />
+          alt="Collaboration with Ministry and IPB University" class="w-full rounded-lg object-cover" loading="lazy" />
         <div
-          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
-          Collaboration with the Ministry and IPB University
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-center font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          Collaboration with Ministry and IPB University
         </div>
       </div>
 
       <!-- Gambar 6 -->
-      <div class="relative lg:-mt-28">
-        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
-          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-full rounded-lg" />
+      <div class="break-inside-avoid overflow-hidden rounded-lg relative">
+        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Trade Expo Indonesia"
+          class="w-full rounded-lg object-cover" loading="lazy" />
         <div
-          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
-          Trade Expo Indonesia</div>
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-center font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          Trade Expo Indonesia
+        </div>
       </div>
 
       <!-- Gambar 7 -->
-      <div class="relative lg:h-auto">
+      <div class="break-inside-avoid overflow-hidden rounded-lg relative">
         <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
-          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-full rounded-lg" />
+          alt="Healthy Chips Export Release to Singapore" class="w-full rounded-lg object-cover" loading="lazy" />
         <div
-          class="absolute inset-0 bg-black text-center bg-opacity-50 flex items-center justify-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
-          Healthy chips export release to singapore
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-center font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          Healthy Chips Export Release to Singapore
         </div>
       </div>
 
       <!-- Gambar 8 -->
-      <div class="relative lg:-mt-28">
-        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
-          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-full rounded-lg" />
+      <div class="break-inside-avoid overflow-hidden rounded-lg relative">
+        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Business Matching"
+          class="w-full rounded-lg object-cover" loading="lazy" />
         <div
           class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-center font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
-          Business Matching</div>
+          Business Matching
+        </div>
       </div>
-
-      <!-- Tambahkan gambar lainnya sesuai kebutuhan -->
     </div>
   </div>
 
 
   <!-- Activities Section -->
-  <section class="py-20 bg-gray-100 relative">
-    <div class="absolute inset-0 bg-black/50 z-0"></div>
-    <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Activities"
-      class="absolute inset-0 w-full h-full object-cover z-0" />
+  <section class="py-20 relative text-white">
+    <!-- Background Image & Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Activities"
+        class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/60"></div> <!-- Overlay (Adjust darkness as needed) -->
+    </div>
 
-    <div class="container mx-auto px-4 relative z-10 text-center text-white">
-      <h2 class="text-3xl font-bold mb-4">Our <span class="text-primary-100">Activities</span></h2>
+    <!-- Content -->
+    <div class="container mx-auto px-4 relative z-10 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        Our <span class="text-primary-100">Activities</span>
+      </h2>
       <p class="text-lg max-w-2xl mx-auto">
         We have done many things to support our success in this export business, and from this activity, we have
         gained a lot of <span class="text-primary-100">experience and learned to develop even better.</span>
@@ -496,61 +503,85 @@
     </div>
   </section>
 
-  <!-- Team Section -->
+  <!-- Team Section with Carousel -->
   <section id="ourteam" class="py-20 bg-white">
     <div class="container mx-auto px-4">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-3xl font-bold mb-4">Meet Our Team</h2>
-        <p class="text-gray-600">Our team of experts is dedicated to ensuring a consistent supply of Indonesia's
-          finest agricultural products</p>
+      <!-- Header -->
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Meet Our Team</h2>
+        <p class="text-gray-500 text-lg">
+          Our dedicated team ensures a consistent supply of Indonesia’s finest agricultural products.
+        </p>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-        <!-- Team Member 1 -->
-        <div class="text-center">
-          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Team Member"
-            class="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
-          <h3 class="font-bold">Al Fiqie</h3>
-          <p class="text-gray-600 text-sm">CEO</p>
-        </div>
+      <!-- Carousel wrapper -->
+      <div class="relative">
+        <!-- Left Button -->
+        <button id="scrollLeft"
+          class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md md:hidden">
+          <!-- SVG Left Arrow -->
+          <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
 
-        <!-- Team Member 2 -->
-        <div class="text-center">
-          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Team Member"
-            class="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
-          <h3 class="font-bold">Syihab</h3>
-          <p class="text-gray-600 text-sm">CFO</p>
-        </div>
+        <!-- Right Button -->
+        <button id="scrollRight"
+          class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md md:hidden">
+          <!-- SVG Right Arrow -->
+          <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
 
-        <!-- Team Member 3 -->
-        <div class="text-center">
-          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Team Member"
-            class="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
-          <h3 class="font-bold">Fadhil</h3>
-          <p class="text-gray-600 text-sm">CBD</p>
-        </div>
+        <!-- Scrollable Container -->
+        <div id="teamContainer" class="flex overflow-x-auto md:grid md:grid-cols-5 gap-6 no-scrollbar scroll-smooth">
+          <!-- Repeat for each team member -->
+          <div class="min-w-[200px] flex-shrink-0 text-center">
+            <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Al Fiqie"
+              class="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-gray-200 shadow-sm" />
+            <h3 class="text-xl font-semibold text-gray-800">Al Fiqie</h3>
+            <p class="text-sm text-gray-500">CEO</p>
+          </div>
 
-        <!-- Team Member 4 -->
-        <div class="text-center">
-          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Team Member"
-            class="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
-          <h3 class="font-bold">Rizvan</h3>
-          <p class="text-gray-600 text-sm">CMO</p>
-        </div>
+          <!-- Repeat for each team member -->
+          <div class="min-w-[200px] flex-shrink-0 text-center">
+            <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Al Fiqie"
+              class="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-gray-200 shadow-sm" />
+            <h3 class="text-xl font-semibold text-gray-800">Al Fiqie</h3>
+            <p class="text-sm text-gray-500">CEO</p>
+          </div>
 
-        <!-- Team Member 5 -->
-        <div class="text-center">
-          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Team Member"
-            class="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
-          <h3 class="font-bold">Fuad</h3>
-          <p class="text-gray-600 text-sm">COO</p>
+          <!-- Repeat for each team member -->
+          <div class="min-w-[200px] flex-shrink-0 text-center">
+            <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Al Fiqie"
+              class="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-gray-200 shadow-sm" />
+            <h3 class="text-xl font-semibold text-gray-800">Al Fiqie</h3>
+            <p class="text-sm text-gray-500">CEO</p>
+          </div>
+
+          <!-- Repeat for each team member -->
+          <div class="min-w-[200px] flex-shrink-0 text-center">
+            <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Al Fiqie"
+              class="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-gray-200 shadow-sm" />
+            <h3 class="text-xl font-semibold text-gray-800">Al Fiqie</h3>
+            <p class="text-sm text-gray-500">CEO</p>
+          </div>
+
+          <!-- Repeat for each team member -->
+          <div class="min-w-[200px] flex-shrink-0 text-center">
+            <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Al Fiqie"
+              class="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-gray-200 shadow-sm" />
+            <h3 class="text-xl font-semibold text-gray-800">Al Fiqie</h3>
+            <p class="text-sm text-gray-500">CEO</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer id="contact" class="bg-teal-700 text-white pt-16 pb-8">
+  <footer id="contact" class="bg-black text-white pt-16 pb-8">
     <div class="container mx-auto px-6 lg:px-12">
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-12">
 
@@ -610,21 +641,21 @@
           <form action="https://api.web3forms.com/submit" method="POST" class="space-y-3">
             <input type="hidden" name="access_key" value="8faa08d0-1fc4-4eb5-bdb9-e1cee6d6a766" />
             <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-
+          
             <input type="text" name="name" placeholder="Nama Lengkap" required
-              class="w-full px-3 py-2 rounded-md bg-teal-600 text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-white/70" />
-
+              class="w-full px-3 py-2 rounded-md bg-transparent border border-white text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-white/70" />
+          
             <input type="email" name="email" placeholder="Email" required
-              class="w-full px-3 py-2 rounded-md bg-teal-600 text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-white/70" />
-
+              class="w-full px-3 py-2 rounded-md bg-transparent border border-white text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-white/70" />
+          
             <textarea name="message" rows="3" placeholder="Pesan Anda" required
-              class="w-full px-3 py-2 rounded-md bg-teal-600 text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-white/70"></textarea>
-
+              class="w-full px-3 py-2 rounded-md bg-transparent border border-white text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-white/70"></textarea>
+          
             <button type="submit"
               class="w-full bg-white text-teal-700 font-semibold py-2 rounded-md hover:bg-gray-100 transition">
               Kirim
             </button>
-          </form>
+          </form>          
         </div>
 
       </div>
