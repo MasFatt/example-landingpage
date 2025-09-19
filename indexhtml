@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top commodity for your Top Business!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/heroicons@1.0.6/dist/heroicons.min.css" rel="stylesheet" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="icon" href="https://elements.envato.com/favicon.ico" type="image/png" />
+  <!-- Konfigurasi Tailwind (script.js) -->
+  <script src="script.js"></script>
+</head>
+
+<body class="font-sans antialiased text-gray-800 bg-secondary">
+  <!-- Panggil file JS -->
+  <script src="script.js"></script>
+
+  <!-- Header/Navbar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center space-x-2">
+          <img src="https://elements.envato.com/favicon.ico" class="h-8 lg:h-10" alt="Logo" />
+          <span class="text-lg font-semibold text-gray-800">PT. Export Tani Nusantara</span>
+        </a>
+
+        <!-- Mobile menu button -->
+        <button class="lg:hidden focus:outline-none" id="mobile-menu-button">
+          <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-6">
+          <a href="#home" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Home</a>
+          <a href="#about" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">About Us</a>
+          <a href="#product" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Our
+            Product</a>
+          <a href="#gallery" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Gallery</a>
+          <a href="#ourteam" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Our Team</a>
+          <a href="#contact" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Contact</a>
+          <a href="https://wa.me/6281212851807"
+            class="bg-black hover:bg-gray-800 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors">
+            Get a Free Quote
+          </a>
+        </nav>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div class="hidden lg:hidden py-4" id="mobile-menu">
+        <div class="flex flex-col space-y-4">
+          <a href="#home" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Home</a>
+          <a href="#about" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">About Us</a>
+          <a href="#product" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Our
+            Product</a>
+          <a href="#gallery" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Gallery</a>
+          <a href="#ourteam" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Our Team</a>
+          <a href="#contact" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Contact</a>
+          <a href="https://wa.me/6281212851807"
+            class="bg-black hover:bg-gray-800 text-white text-sm font-semibold px-5 py-2 rounded-lg text-center transition-colors">
+            Get a Free Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-20 relative min-h-screen flex items-center justify-center">
+    <!-- Background -->
+    <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Background"
+      class="absolute inset-0 w-full h-full object-cover z-0" />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-black/60 z-0"></div>
+
+    <!-- Content -->
+    <div class="container mx-auto px-4 relative z-10 text-center text-white">
+      <span class="bg-white/20 text-white text-xs px-4 py-1 rounded-full font-medium inline-block mb-4">
+        PT. Export Tani Nusantara
+      </span>
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+        Bringing the Richness of Indonesia's Natural Resources to The World!
+      </h1>
+      <p class="text-lg md:text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
+        We are your trusted partner in supplying premium-quality commodities.
+        We connect global markets with premium commodities produced by local farmers and SMEs.
+      </p>
+      <a href="#about"
+        class="bg-black hover:bg-gray-800 text-white font-semibold px-8 py-3 rounded-lg inline-block transition-colors shadow-lg">
+        Discover More
+      </a>
+    </div>
+  </section>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/6281212851807" target="_blank"
+    class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:bg-green-700 transition-colors">
+    <svg class="w-7 h-7 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M20.4 3.6C18.4 1.6 15.6 0.5 12.5 0.5 6.3 0.5 1.5 5.3 1.5 11.5c0 1.8.5 3.6 1.3 5.1L.6 23.4c-.1.3-.1.6.2.8.2.2.4.2.6.2l6.8-1.8c1.5.8 3.3 1.2 5 1.2 6.2 0 11-4.8 11-11 0-3.1-1.1-5.9-3.1-8zm-7.9 17.5c-1.6 0-3.2-.4-4.6-1.2l-.3-.2-4.1 1.1 1.1-4.1-.2-.3c-.8-1.4-1.2-3-1.2-4.6 0-5.2 4.3-9.5 9.5-9.5 2.5 0 4.8 1 6.5 2.7 1.7 1.7 2.7 4 2.7 6.5-.1 5.2-4.4 9.6-9.6 9.6zm5.2-7.2c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.1-.3.3-.7 1-.8 1-.1.1-.1.2-.2.2-.1 0-.3-.1-.4-.1-.7-.4-1.4-.8-2-1.5-.5-.5-1.2-1.6-1.3-1.8-.1-.2-.1-.3 0-.5.1-.1.2-.3.3-.4.2-.2.3-.3.4-.5.1-.2.1-.3.2-.5 0-.2-.1-.4-.2-.6-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6-.2 0-.4 0-.6 0-.2 0-.4.1-.6.1-.2.1-.6.3-.7.3-.3.1-.4.3-.5.6-.1.3-.7 1-.7 2.4s.8 2.8 1.1 3c.1.2 1.4 2.3 3.5 3.2 1 .4 1.6.5 2.1.6.8.1 1.5.1 2-.1.5-.1 1.7-.7 1.9-1.4.2-.6.2-1.1.1-1.2-.1-.2-.4-.2-.7-.3z" />
+    </svg>
+  </a>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col-reverse lg:flex-row items-center gap-12">
+
+        <!-- Text Content -->
+        <div class="w-full lg:w-1/2">
+          <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-6">
+            We Are <span class="text-primary-400 italic">PT. Export Tani Nusantara</span>
+          </h2>
+          <p class="text-gray-600 mb-6">
+            PT Expor Tani Nusantara is a company dedicated to exporting high-quality Indonesian products,
+            including spices, agricultural produce, coffee, and healthy chips, to international markets.
+            This is in line with our mission to <span class="italic font-medium">"Bridge UMKM to the Worldwide
+              Market."</span>
+          </p>
+
+          <p class="text-gray-600 mb-6">
+            Global demand for ethically sourced agricultural products is increasing, according to the FAO.
+            In response, we partner with local Indonesian farmers to provide premium Wamena coffee,
+            authentic spices, agriculture, and healthy chips.
+          </p>
+
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start">
+              <span class="bg-primary-400 text-white rounded-full p-2 mr-3 flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="text-gray-600"><span class="font-bold">Empower local farmers</span> to achieve prosperity
+                through sustainable farming practices, fair pricing, and enhanced welfare.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-primary-400 text-white rounded-full p-2 mr-3 flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="text-gray-600"><span class="font-bold">Enable esteemed B2B customers</span> to meet their
+                business objectives by supplying superior Indonesian products.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-primary-400 text-white rounded-full p-2 mr-3 flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="text-gray-600"><span class="font-bold">Offer our valued end customers</span> the benefits of our
+                products, including unique flavors, enhanced well-being, and a healthier lifestyle.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-primary-400 text-white rounded-full p-2 mr-3 flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="text-gray-600"><span class="font-bold">Foster a positive and inclusive work environment</span>
+                where our dedicated team can thrive, grow, and develop professionally.</p>
+            </li>
+          </ul>
+
+          <button
+            class="bg-primary-400 hover:bg-primary-500 text-white font-semibold px-6 py-3 rounded-lg flex items-center transition-colors">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+            Download Company Profile
+          </button>
+        </div>
+
+        <!-- Image / Mockup -->
+        <div class="w-full lg:w-1/2 flex justify-center">
+          <div class="max-w-md w-full">
+            <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="About Us"
+              class="rounded-2xl w-full h-auto object-cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Why Choose Us Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <!-- Title -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-primary-100 font-semibold mb-2">
+          Why Choose Us<br />
+          <span class="text-2xl text-black">Features & Benefits </span>
+        </h2>
+        <p class="mt-4 text-gray-600">
+          Discover why businesses trust us for international trade and long-term success.
+        </p>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-gray-50 rounded-2xl p-8 text-left">
+          <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium mb-4">
+            Professionalism
+          </span>
+          <h3 class="text-xl font-bold mb-3">Trusted & Experienced</h3>
+          <p class="text-gray-600">
+            Our team consists of professionals with extensive experience in the
+            international trade industry, ensuring reliable and secure transactions.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gray-50 rounded-2xl p-8 text-left">
+          <span class="inline-block px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm font-medium mb-4">
+            Relationship Service
+          </span>
+          <h3 class="text-xl font-bold mb-3">Customer-Centric Approach</h3>
+          <p class="text-gray-600">
+            We prioritize customer satisfaction by providing fast, responsive, and
+            solution-oriented services tailored to your business needs.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-gray-50 rounded-2xl p-8 text-left">
+          <span class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm font-medium mb-4">
+            Competitive Pricing
+          </span>
+          <h3 class="text-xl font-bold mb-3">Affordable Without Compromise</h3>
+          <p class="text-gray-600">
+            We understand that competitive pricing is crucial in the global market,
+            delivering cost-effective solutions without sacrificing quality.
+          </p>
+        </div>
+      </div>
+
+      <!-- Extra row (optional, for more data like referensi gambar) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <!-- Card 4 -->
+        <div class="bg-gray-50 rounded-2xl p-8 text-left">
+          <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm font-medium mb-4">
+            Innovation
+          </span>
+          <h3 class="text-xl font-bold mb-3">Adapting to Change</h3>
+          <p class="text-gray-600">
+            We constantly innovate and adapt to new market demands, ensuring your business stays ahead of competition.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-gray-50 rounded-2xl p-8 text-left">
+          <span class="inline-block px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm font-medium mb-4">
+            Global Network
+          </span>
+          <h3 class="text-xl font-bold mb-3">Worldwide Connections</h3>
+          <p class="text-gray-600">
+            With our international partners and distribution network, we help expand your business globally.
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-gray-50 rounded-2xl p-8 text-left">
+          <span class="inline-block px-3 py-1 bg-teal-100 text-teal-600 rounded-full text-sm font-medium mb-4">
+            Efficiency
+          </span>
+          <h3 class="text-xl font-bold mb-3">Faster, Smarter, Better</h3>
+          <p class="text-gray-600">
+            Streamlined processes and advanced solutions that improve operational efficiency across the supply chain.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Products Section -->
+  <section id="product" class="py-20 bg-gray-900 text-white relative">
+    <div class="absolute inset-0 bg-black/60 z-0"></div>
+    <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Background"
+      class="absolute inset-0 w-full h-full object-cover z-0" />
+
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="text-primary-100 font-semibold mb-2">Our Product</p>
+        <h2 class="text-3xl font-bold mb-4">Trusted Partner In Supplying Premium-quality Commodities!</h2>
+        <p class="text-gray-300">PT. Export Tani Nusantara – Top Commodities Supplier in Indonesia</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Product Card 1 -->
+        <div
+          class="bg-white text-gray-800 rounded-2xl shadow-lg overflow-hidden transition-transform hover:translate-y-2">
+          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Coffee Beans"
+            class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-4 text-center">Coffee Beans</h3>
+            <div class="flex flex-col gap-4">
+              <button
+                class="bg-primary-100 hover:bg-primary-400 text-white font-semibold py-2 px-4 rounded-lg flex items-center justify-center transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+                Download Catalogue
+              </button>
+              <a href="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
+                class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg text-center transition-colors">Quote
+                Now!</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div
+          class="bg-white text-gray-800 rounded-2xl shadow-lg overflow-hidden transition-transform hover:translate-y-2">
+          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Healthy Chips"
+            class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-4 text-center">Healthy Chips</h3>
+            <div class="flex flex-col gap-4">
+              <button
+                class="bg-primary-100 hover:bg-primary-400 text-white font-semibold py-2 px-4 rounded-lg flex items-center justify-center transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+                Download Catalogue
+              </button>
+              <a href="https://wa.me/6281212851807"
+                class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg text-center transition-colors">Quote
+                Now!</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div
+          class="bg-white text-gray-800 rounded-2xl shadow-lg overflow-hidden transition-transform hover:translate-y-2">
+          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Spices"
+            class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-4 text-center">Spices</h3>
+            <div class="flex flex-col gap-4">
+              <button
+                class="bg-primary-100 hover:bg-primary-400 text-white font-semibold py-2 px-4 rounded-lg flex items-center justify-center transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+                Download Catalogue
+              </button>
+              <a href="https://wa.me/6281212851807"
+                class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg text-center transition-colors">Quote
+                Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <!-- Container untuk gambar -->
+  <div id="gallery" class="max-w-screen-xl mx-auto px-8 py-8">
+    <div class="flex flex-col items-center mt-24">
+      <h1 class="text-3xl md:text-4xl text-green-custom-400-nohover font-bold">Our Gallery</h1>
+      <p class="text-xs text-center sm:text-left sm:text-base font-medium text-gray-600 pt-4 pb-12">Some of best capture
+        of PT. Export Tani – A Top Comodities Supplier in Indonesia.</p>
+    </div>
+
+    <!-- Grid untuk gambar -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-auto">
+      <!-- Gambar 1 -->
+      <div class="relative">
+        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
+          alt="Gallery PT.Export Tani Nusantarat" class="object-cover w-full h-full rounded-lg" />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center text-center justify-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          Export Product Manufacturing</div>
+      </div>
+
+      <!-- Gambar 2 -->
+      <div class="relative lg:h-3/4">
+        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
+          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-full rounded-lg" />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center text-center justify-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          Export Shipment To Australia</div>
+      </div>
+
+      <!-- Gambar 3 -->
+      <div class="relative">
+        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
+          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-auto rounded-lg" />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center text-center justify-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          Export Shipment To Australia</div>
+      </div>
+
+      <!-- Gambar 4 -->
+      <div class="relative lg:h-3/4">
+        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
+          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-full rounded-lg" />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center text-center justify-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          National Export Collaboration Conference
+        </div>
+      </div>
+
+      <!-- Gambar 5 -->
+      <div class="relative lg:h-auto">
+        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
+          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-full rounded-lg" />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          Collaboration with the Ministry and IPB University
+        </div>
+      </div>
+
+      <!-- Gambar 6 -->
+      <div class="relative lg:-mt-28">
+        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
+          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-full rounded-lg" />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          Trade Expo Indonesia</div>
+      </div>
+
+      <!-- Gambar 7 -->
+      <div class="relative lg:h-auto">
+        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
+          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-full rounded-lg" />
+        <div
+          class="absolute inset-0 bg-black text-center bg-opacity-50 flex items-center justify-center text-white font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          Healthy chips export release to singapore
+        </div>
+      </div>
+
+      <!-- Gambar 8 -->
+      <div class="relative lg:-mt-28">
+        <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
+          alt="Gallery PT.Export Tani Nusantara" class="object-cover w-full h-full rounded-lg" />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-center font-bold text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+          Business Matching</div>
+      </div>
+
+      <!-- Tambahkan gambar lainnya sesuai kebutuhan -->
+    </div>
+  </div>
+
+
+  <!-- Activities Section -->
+  <section class="py-20 bg-gray-100 relative">
+    <div class="absolute inset-0 bg-black/50 z-0"></div>
+    <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Activities"
+      class="absolute inset-0 w-full h-full object-cover z-0" />
+
+    <div class="container mx-auto px-4 relative z-10 text-center text-white">
+      <h2 class="text-3xl font-bold mb-4">Our <span class="text-primary-100">Activities</span></h2>
+      <p class="text-lg max-w-2xl mx-auto">
+        We have done many things to support our success in this export business, and from this activity, we have
+        gained a lot of <span class="text-primary-100">experience and learned to develop even better.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="ourteam" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold mb-4">Meet Our Team</h2>
+        <p class="text-gray-600">Our team of experts is dedicated to ensuring a consistent supply of Indonesia's
+          finest agricultural products</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <!-- Team Member 1 -->
+        <div class="text-center">
+          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Team Member"
+            class="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
+          <h3 class="font-bold">Al Fiqie</h3>
+          <p class="text-gray-600 text-sm">CEO</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="text-center">
+          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Team Member"
+            class="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
+          <h3 class="font-bold">Syihab</h3>
+          <p class="text-gray-600 text-sm">CFO</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="text-center">
+          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Team Member"
+            class="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
+          <h3 class="font-bold">Fadhil</h3>
+          <p class="text-gray-600 text-sm">CBD</p>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="text-center">
+          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Team Member"
+            class="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
+          <h3 class="font-bold">Rizvan</h3>
+          <p class="text-gray-600 text-sm">CMO</p>
+        </div>
+
+        <!-- Team Member 5 -->
+        <div class="text-center">
+          <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg" alt="Team Member"
+            class="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
+          <h3 class="font-bold">Fuad</h3>
+          <p class="text-gray-600 text-sm">COO</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-teal-700 text-white pt-16 pb-8">
+    <div class="container mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-12">
+
+        <!-- Brand + Deskripsi -->
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <img src="https://images.pexels.com/photos/4011443/pexels-photo-4011443.jpeg"
+              alt="Logo PT Export Tani Nusantara" class="h-10 w-10 object-cover rounded-md" />
+            <span class="text-xl font-bold">ExportTani</span>
+          </div>
+          <p class="text-sm text-gray-100 mb-6">
+            Pemasok dan eksportir unggulan komoditas pertanian berkualitas dari Indonesia.
+            Kami berkomitmen menyediakan produk terbaik untuk pasar global.
+          </p>
+          <!-- Sosial media -->
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-gray-200">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M24 4.56a9.93 9.93 0 01-2.83.77A4.93 4.93 0 0023.34 3a9.86 9.86 0 01-3.13 1.2A4.92 4.92 0 0016.62 3c-2.72 0-4.93 2.21-4.93 4.93 0 .39.05.77.13 1.14C7.73 8.84 4.1 6.7 1.67 3.15c-.43.73-.68 1.58-.68 2.48 0 1.71.87 3.22 2.19 4.1a4.9 4.9 0 01-2.23-.62v.06c0 2.38 1.7 4.37 3.95 4.82-.41.11-.85.17-1.3.17-.31 0-.62-.03-.92-.09.62 1.93 2.43 3.34 4.57 3.38A9.88 9.88 0 010 19.54a13.94 13.94 0 007.56 2.21c9.05 0 14-7.5 14-14v-.64A9.93 9.93 0 0024 4.56z" />
+              </svg>
+            </a>
+            <a href="#" class="hover:text-gray-200">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.04c-5.52 0-10 4.48-10 10.01 0 4.42 3.61 8.07 8.24 8.83v-6.25h-2.48v-2.58h2.48v-1.96c0-2.45 1.46-3.79 3.68-3.79 1.07 0 2.18.19 2.18.19v2.39h-1.23c-1.21 0-1.58.75-1.58 1.52v1.65h2.7l-.43 2.58h-2.27v6.25c4.63-.76 8.24-4.41 8.24-8.83 0-5.53-4.48-10.01-10-10.01z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pages -->
+        <div>
+          <h3 class="font-semibold mb-4">Pages</h3>
+          <ul class="space-y-2 text-sm text-gray-100">
+            <li><a href="#about" class="hover:underline">About Us</a></li>
+            <li><a href="#product" class="hover:underline">Product</a></li>
+            <li><a href="#gallery" class="hover:underline">Gallery</a></li>
+            <li><a href="#ourteam" class="hover:underline">Our Team</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h3 class="font-semibold mb-4">Support</h3>
+          <ul class="space-y-2 text-sm text-gray-100">
+            <li><a href="#" class="hover:underline">FAQs</a></li>
+            <li><a href="#" class="hover:underline">Support Center</a></li>
+            <li><a href="#" class="hover:underline">Security</a></li>
+          </ul>
+        </div>
+
+        <!-- Form Contact -->
+        <div>
+          <h3 class="font-semibold mb-4">Hubungi Kami</h3>
+          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-3">
+            <input type="hidden" name="access_key" value="8faa08d0-1fc4-4eb5-bdb9-e1cee6d6a766" />
+            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+
+            <input type="text" name="name" placeholder="Nama Lengkap" required
+              class="w-full px-3 py-2 rounded-md bg-teal-600 text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-white/70" />
+
+            <input type="email" name="email" placeholder="Email" required
+              class="w-full px-3 py-2 rounded-md bg-teal-600 text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-white/70" />
+
+            <textarea name="message" rows="3" placeholder="Pesan Anda" required
+              class="w-full px-3 py-2 rounded-md bg-teal-600 text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-white/70"></textarea>
+
+            <button type="submit"
+              class="w-full bg-white text-teal-700 font-semibold py-2 rounded-md hover:bg-gray-100 transition">
+              Kirim
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom -->
+      <div
+        class="border-t border-white/20 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-200">
+        <div class="flex space-x-6 mb-4 md:mb-0">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Service</a>
+        </div>
+        <p>© 2024 PT. Export Tani Nusantara. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
